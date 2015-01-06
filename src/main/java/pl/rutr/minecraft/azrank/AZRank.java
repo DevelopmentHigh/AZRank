@@ -85,6 +85,14 @@ public class AZRank extends JavaPlugin {
             {
                 updater=new UpdateChecker(this);
             }
+            
+            if(getServer().getPluginManager().getPlugin("Vault")==null)
+            {
+                log.log(Level.SEVERE, "This plugin needs Vault to work!");
+                log.log(Level.SEVERE, "Please install it from http://dev.bukkit.org/bukkit-plugins/vault/");
+                return;
+            }
+            
             try {
                 getCommand("azrank").setExecutor(commandExecutor);
                 getCommand("azplayer").setExecutor(commandExecutor);
