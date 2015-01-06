@@ -22,6 +22,10 @@
             <id>vault-repo</id>
             <url>http://nexus.theyeticave.net/content/repositories/pub_releases</url>
         </repository>
+        <repository>
+            <id>groupmanager-repo</id>
+            <url>https://raw.githubusercontent.com/gmcouto/mvn-repos/master/snapshots</url>
+        </repository>
     </repositories>
     <dependencies>
         <dependency>
